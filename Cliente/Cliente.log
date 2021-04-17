@@ -1,0 +1,157 @@
+[INFO] 02:17:01:871 TP Integrador/(10522:10522): soy un log
+[INFO] 02:17:01:873 TP Integrador/(10522:10522): Hola, soy un valor
+[INFO] 02:17:05:315 TP Integrador/(10539:10539): soy un log
+[INFO] 02:17:05:318 TP Integrador/(10539:10539): Hola, soy un valor
+[INFO] 02:17:06:518 TP Integrador/(10539:10539): asd}
+[INFO] 02:21:33:987 TP Integrador/(11281:11281): soy un log
+[INFO] 02:21:33:990 TP Integrador/(11281:11281): Hola, soy un valor
+[INFO] 02:21:35:580 TP Integrador/(11281:11281): dfdfd
+[INFO] 16:40:05:616 TP Integrador/(12124:12124): soy un log
+[INFO] 16:40:05:618 TP Integrador/(12124:12124): Hola, soy un valor
+[INFO] 16:40:12:140 TP Integrador/(12124:12124): j
+[INFO] 16:40:14:738 TP Integrador/(12124:12124): Conexión Terminada
+[INFO] 17:06:07:277 TP Integrador/(15548:15548): Opción mandare un valor
+[INFO] 17:06:07:278 TP Integrador/(15548:15548): hay que mandar un valor
+[INFO] 17:06:55:552 TP Integrador/(15641:15641): Opción mandar un valor
+[INFO] 17:06:55:553 TP Integrador/(15641:15641): hay que mandar un valor
+[INFO] 17:06:57:198 TP Integrador/(15641:15641): Opción mandar un mensaje
+[INFO] 17:06:57:198 TP Integrador/(15641:15641): hay que mandar un mensaje
+[INFO] 17:06:58:828 TP Integrador/(15641:15641): Opción mandar un valor
+[INFO] 17:06:58:828 TP Integrador/(15641:15641): hay que mandar un valor
+[INFO] 17:06:59:526 TP Integrador/(15641:15641): Opción mandar un mensaje
+[INFO] 17:06:59:526 TP Integrador/(15641:15641): hay que mandar un mensaje
+[INFO] 17:08:12:448 TP Integrador/(15823:15823): Opción mandar un valor
+[INFO] 17:08:12:449 TP Integrador/(15823:15823): hay que mandar un valor
+[INFO] 17:27:15:813 TP Integrador/(18308:18308): Opción mandar un valor
+[INFO] 17:27:15:813 TP Integrador/(18308:18308): Conexión Terminada
+[INFO] 17:47:46:17 TP Integrador/(21401:21401): Opción mandar un mensaje
+[INFO] 17:48:09:269 TP Integrador/(21444:21444): Opción mandar un mensaje
+[INFO] 17:48:17:933 TP Integrador/(21463:21463): Opción mandar un mensaje
+[INFO] 17:48:38:801 TP Integrador/(21493:21493): Opción mandar un mensaje
+[INFO] 22:32:14:514 TP Integrador/(3718:3718): Opción mandar paquete PRUEBA
+[INFO] 14:38:44:494 TP Integrador/(27043:27043): Opción mandar un mensaje
+[INFO] 14:39:54:462 TP Integrador/(27061:27061): Opción mandar un valor
+[INFO] 15:25:12:889 TP Integrador/(30887:30887): Opción mandar un valor
+[INFO] 15:27:51:993 TP Integrador/(31205:31205): Opción mandar un valor
+[INFO] 15:30:08:988 TP Integrador/(31446:31446): Opción mandar un valor
+[INFO] 15:30:19:942 TP Integrador/(31464:31464): Opción mandar un valor
+[INFO] 15:30:19:942 TP Integrador/(31464:31464): Conexión Terminada
+[INFO] 15:32:20:206 TP Integrador/(31660:31660): Opción mandar un valor
+[INFO] 15:32:20:206 TP Integrador/(31660:31660): Conexión Terminada
+[INFO] 15:32:59:391 TP Integrador/(31713:31713): Opción mandar un mensaje
+[INFO] 15:33:26:313 TP Integrador/(31753:31753): Opción mandar un mensaje
+[INFO] 15:34:20:915 TP Integrador/(31813:31813): Opción mandar un valor
+[INFO] 15:34:20:915 TP Integrador/(31813:31813): Conexión Terminada
+[INFO] 15:38:17:134 TP Integrador/(32165:32165): Opción mandar un valor
+[INFO] 15:38:35:926 TP Integrador/(32194:32194): Opción mandar un valor
+[INFO] 15:38:35:926 TP Integrador/(32194:32194): Conexión Terminada
+[INFO] 15:38:59:41 TP Integrador/(32323:32323): Opción mandar un valor
+[INFO] 15:38:59:41 TP Integrador/(32323:32323): Conexión Terminada
+[INFO] 15:39:06:866 TP Integrador/(32337:32337): Opción mandar un valor
+[INFO] 15:39:06:867 TP Integrador/(32337:32337): Conexión Terminada
+[INFO] 15:47:06:842 TP Integrador/(561:561): Opción mandar un valor
+[INFO] 15:47:06:843 TP Integrador/(561:561): Conexión Terminada
+[INFO] 15:50:15:771 TP Integrador/(851:851): Opción mandar un valor
+[INFO] 15:50:15:772 TP Integrador/(851:851): Conexión Terminada
+[INFO] 15:51:09:300 TP Integrador/(965:965): Opción mandar un valor
+[INFO] 15:51:09:300 TP Integrador/(965:965): Conexión Terminada
+[INFO] 15:53:29:491 TP Integrador/(1202:1202): Opción mandar un mensaje
+[INFO] 15:53:43:35 TP Integrador/(1226:1226): Opción mandar un mensaje
+[INFO] 15:53:47:266 TP Integrador/(1226:1226): Opción mandar un valor
+[INFO] 15:53:47:267 TP Integrador/(1226:1226): Conexión Terminada
+[INFO] 15:54:58:195 TP Integrador/(1372:1372): Opción mandar un mensaje
+[INFO] 15:54:59:248 TP Integrador/(1372:1372): Conexión Terminada
+[INFO] 15:55:14:290 TP Integrador/(1398:1398): Opción mandar un mensaje
+[INFO] 15:55:16:344 TP Integrador/(1398:1398): Conexión Terminada
+[INFO] 15:55:25:228 TP Integrador/(1418:1418): Opción mandar un valor
+[INFO] 15:55:25:229 TP Integrador/(1418:1418): Conexión Terminada
+[INFO] 15:59:01:463 TP Integrador/(1792:1792): Opción mandar un valor
+[INFO] 15:59:01:463 TP Integrador/(1792:1792): Conexión Terminada
+[INFO] 15:59:07:196 TP Integrador/(1800:1800): Opción mandar un valor
+[INFO] 15:59:12:443 TP Integrador/(1808:1808): Opción mandar un valor
+[INFO] 15:59:12:443 TP Integrador/(1808:1808): Conexión Terminada
+[INFO] 16:02:44:697 TP Integrador/(2167:2167): Opción mandar un mensaje
+[WARNING] 16:11:24:544 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:11:28:563 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:11:30:549 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:11:31:171 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:11:31:677 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:11:32:196 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:11:32:973 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:11:33:715 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:11:35:713 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:11:36:567 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:11:36:850 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:11:37:132 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:11:37:372 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:11:37:571 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:11:37:747 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:11:38:573 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:11:38:828 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:11:39:7 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:11:112 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:11:785 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:12:113 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:12:321 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:12:496 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:12:997 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:27 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:58 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:88 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:118 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:148 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:178 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:208 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:238 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:268 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:299 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:329 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:359 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:389 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:421 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:451 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:481 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:511 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:543 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:573 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:604 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:634 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:13:664 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:14:733 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:15:233 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:15:263 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:15:297 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:15:324 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:15:353 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:15:383 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:15:413 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:15:443 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:15:474 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:15:504 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:15:536 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:15:566 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:15:598 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:15:628 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:15:660 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:15:690 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:15:720 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:15:750 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:15:780 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:15:811 TP Integrador/(2945:2945): Opción no codeada. Volver a intentar más tarde.
+[WARNING] 16:12:59:240 TP Integrador/(3164:3164): Opción no codeada. Volver a intentar más tarde.
+[INFO] 16:13:01:143 TP Integrador/(3164:3164): Opción mandar un valor
+[INFO] 16:13:21:993 TP Integrador/(3198:3198): Opción mandar un valor
+[INFO] 16:13:26:368 TP Integrador/(3208:3208): Opción mandar un mensaje
+[INFO] 16:13:49:162 TP Integrador/(3235:3235): Opción mandar un valor
+[INFO] 16:13:49:162 TP Integrador/(3235:3235): Conexión Terminada
+[INFO] 16:13:56:455 TP Integrador/(3248:3248): Opción mandar un mensaje
+[INFO] 16:14:04:562 TP Integrador/(3262:3262): Opción mandar un mensaje
+[INFO] 16:14:06:198 TP Integrador/(3262:3262): Conexión Terminada
+[INFO] 16:14:49:284 TP Integrador/(3375:3375): Opción mandar un valor
+[INFO] 16:14:53:447 TP Integrador/(3387:3387): Opción mandar un mensaje
+[INFO] 16:15:12:132 TP Integrador/(3447:3447): Opción mandar un valor
+[INFO] 16:15:12:132 TP Integrador/(3447:3447): Conexión Terminada
+[INFO] 16:15:21:378 TP Integrador/(3462:3462): Opción mandar un mensaje
+[INFO] 16:15:22:20 TP Integrador/(3462:3462): Conexión Terminada
+[INFO] 16:18:17:604 TP Integrador/(3729:3729): Opción mandar un valor
+[INFO] 16:18:17:604 TP Integrador/(3729:3729): Conexión Terminada
