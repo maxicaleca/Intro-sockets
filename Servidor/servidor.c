@@ -100,7 +100,7 @@ void deserializar_persona(t_buffer* buffer, t_log* logger)
 	memcpy(&(persona->nombre_length), stream, sizeof(uint32_t));
 	stream += sizeof(uint32_t);
 	persona->nombre = malloc(persona->nombre_length);
-	memcpy(persona->nombre, stream, persona->nombre_length);
+	memcpy(persona->nombre, stream, persona->nombre_length+1);
 
 	printf("Edad de la persona %d \n", (persona->edad));
 	printf("Nombre de la persona %s \n", (persona->nombre));

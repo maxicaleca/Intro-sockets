@@ -76,12 +76,16 @@ void crear_y_enviar_paquete_persona(t_log* logger)
 {
 
 	t_persona* persona = malloc(sizeof(t_persona));
+	char* string_no_tocar = "MaximilianoDamian";
 
 		persona->dni=34887744;
 		persona->edad=25;
-		persona->nombre="Maxi";
-		persona->nombre_length = sizeof(persona->nombre);
+		persona->nombre=malloc(strlen(string_no_tocar)+1);
+		strcpy(persona->nombre, string_no_tocar);
+		persona->nombre_length = strlen(persona->nombre);
 		persona->pasaporte=1024;
+
+
 
 
 	t_buffer* buffer = malloc(sizeof(t_buffer));
@@ -106,7 +110,7 @@ void crear_y_enviar_paquete_persona(t_log* logger)
 
 	memcpy(stream + offset, &persona->nombre_length, sizeof(uint32_t));
 	offset += sizeof(uint32_t);
-	memcpy(stream + offset, persona->nombre, strlen(persona->nombre));
+	memcpy(stream + offset, persona->nombre, strlen(persona->nombre)+1);
 
 
 	buffer->stream = stream;
@@ -138,6 +142,8 @@ void crear_y_enviar_paquete_persona(t_log* logger)
 	free(a_enviar);
 	free(paquete->buffer->stream);
 	free(paquete->buffer);
+	free(persona->nombre);
+	free(persona);
 	free(paquete);
 
 
