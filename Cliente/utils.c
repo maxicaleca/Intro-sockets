@@ -23,6 +23,8 @@ void* serializar_paquete(t_paquete* paquete, int bytes)
 	return magic;
 }
 
+
+
 int crear_conexion(char *ip, char* puerto)
 {
 	struct addrinfo hints;
@@ -45,7 +47,7 @@ int crear_conexion(char *ip, char* puerto)
 	return socket_cliente;
 }
 
-void enviar_mensaje(char* mensaje, int socket_cliente)
+/*void enviar_mensaje(char* mensaje, int socket_cliente)
 {
 	t_paquete* paquete = malloc(sizeof(t_paquete));
 
@@ -63,7 +65,7 @@ void enviar_mensaje(char* mensaje, int socket_cliente)
 
 	free(a_enviar);
 	eliminar_paquete(paquete);
-}
+}*/
 
 
 void crear_buffer(t_paquete* paquete)
@@ -73,7 +75,7 @@ void crear_buffer(t_paquete* paquete)
 	paquete->buffer->stream = NULL;
 }
 
-t_paquete* crear_super_paquete(void)
+/*t_paquete* crear_super_paquete(void)
 {
 	//me falta un malloc!
 	t_paquete* paquete;
@@ -82,12 +84,12 @@ t_paquete* crear_super_paquete(void)
 	//paquete->codigo_operacion = PAQUETE;
 	//crear_buffer(paquete);
 	return paquete;
-}
+}*/
 
 t_paquete* crear_paquete(void)
 {
 	t_paquete* paquete = malloc(sizeof(t_paquete));
-	paquete->codigo_operacion = PAQUETE;
+	paquete->codigo_operacion = PERSONA;
 	crear_buffer(paquete);
 	return paquete;
 }
@@ -121,6 +123,9 @@ void enviar_paquete(t_paquete* paquete, int socket_cliente)
 
 	free(a_enviar);
 }
+
+
+
 
 void eliminar_paquete(t_paquete* paquete)
 {

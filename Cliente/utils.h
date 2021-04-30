@@ -17,38 +17,35 @@
 #include<string.h>
 
 
-typedef enum
-{
-	MEMORIA,
-	FILESYSTEM,
-	PROCESO
-
-}id_modulo;
 
 
-typedef enum
-{
-	MENSAJE,
-	PAQUETE,
-	PEDIR_MEMORIA,
-	GUARDAR_ARCHIVO,
-	CREAR_PROCESO
-}codigo_operacion;
-
-
-typedef struct
-{
-	int size;
-	void* stream;
+typedef struct {
+    uint32_t size; // Tamaño del payload
+    void* stream; // Payload
 } t_buffer;
 
 
+typedef enum
+{
+	PERSONA
+}op_code;
+
 typedef struct
 {
-	id_modulo id_modulo;
-	codigo_operacion codigo_operacion;
+	op_code codigo_operacion;
 	t_buffer* buffer;
 } t_paquete;
+
+
+typedef struct {
+    uint32_t dni;
+    uint8_t edad;
+    uint32_t pasaporte;
+    uint32_t nombre_length;
+    char* nombre;
+} t_persona;
+
+
 
 
 
@@ -60,5 +57,5 @@ void agregar_a_paquete(t_paquete* paquete, void* valor, int tamanio);
 void enviar_paquete(t_paquete* paquete, int socket_cliente);
 void liberar_conexion(int socket_cliente);
 void eliminar_paquete(t_paquete* paquete);
-
+void enviar_paquete_persona(t_paquete* paquete, int socket_cliente);
 #endif /* UTILS_H_ */

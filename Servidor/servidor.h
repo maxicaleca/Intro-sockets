@@ -15,5 +15,7 @@
 #include "utils.h"
 
 int crear_conexion_servidor_prueba();
-
+int atender_conexion(int);
+void deserializar_persona(t_buffer* , t_log*);
+int recibir_operacion_new(int);
 #endif /* SERVIDOR_H_ */

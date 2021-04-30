@@ -20,38 +20,33 @@
 #define IP "127.0.0.1"
 #define PUERTO "4444"
 
-typedef enum
-{
-	MEMORIA,
-	FILESYSTEM,
-	PROCESO
 
-}id_modulo;
-
-
-typedef enum
-{
-	MENSAJE,
-	PAQUETE,
-	PEDIR_MEMORIA,
-	GUARDAR_ARCHIVO,
-	CREAR_PROCESO
-}op_code;
-
-
-typedef struct
-{
-	int size;
-	void* stream;
+typedef struct {
+    uint32_t size; // Tamaño del payload
+    void* stream; // Payload
 } t_buffer;
 
 
+typedef enum
+{
+	PERSONA
+}op_code;
+
 typedef struct
 {
-	id_modulo modulo;
 	op_code codigo_operacion;
 	t_buffer* buffer;
 } t_paquete;
+
+
+typedef struct {
+    uint32_t dni;
+    uint8_t edad;
+    uint32_t pasaporte;
+    uint32_t nombre_length;
+    char* nombre;
+} t_persona;
+
 
 t_log* logger;
 

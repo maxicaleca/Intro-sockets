@@ -28,7 +28,7 @@ void menu_principal(){
 
 void  mostrar_menu(){
 
-	printf("Menú:\n\n1-Mandar un valor guardado en Cliente.config\n2-Mandar un Mensaje\n\n"/*3-Mandar paquete CREAR_PROCESO\n"*/);
+	printf("Menú:\n\n1-Mandar PERSONA.\n\n"/*3-Mandar paquete CREAR_PROCESO\n"*/);
 
 }
 
@@ -47,15 +47,10 @@ void leer_consola(t_log* logger)
 				switch(leido)
 				{
 						case 1:
-								log_info(logger, "Opción mandar un valor");
-								mandar_valor(logger);
+								log_info(logger, "Opción mandar PERSONA");
+								crear_y_enviar_paquete_persona(logger);
 								break;
-					 	case 2:
-					 			log_info(logger, "Opción mandar un mensaje");
-					 			printf("Ingrese un mensaje para enviar: \n\n");
-					 			scanf("%s", mensaje);
-					 			mandar_mensaje(logger,mensaje);
-					 			break;
+
 						default:
 								log_warning(logger, "Opción no codeada. Volver a intentar más tarde.");
 								break;
@@ -69,7 +64,6 @@ void leer_consola(t_log* logger)
 		}
 
 	free(leido_string);
-	free(leido);
 	free(mensaje);
 
 
@@ -77,54 +71,83 @@ void leer_consola(t_log* logger)
 
 
 
-/*void enviar_paquete_prueba(t_log* logger, int accion, int id_modulo)
+
+void crear_y_enviar_paquete_persona(t_log* logger)
 {
-	t_paquete* paquete = crear_paquete_segun_accion(accion);
-	paquete->id_modulo = id_modulo;
+
+	t_persona* persona = malloc(sizeof(t_persona));
+
+		persona->dni=34887744;
+		persona->edad=25;
+		persona->nombre="Maxi";
+		persona->nombre_length = sizeof(persona->nombre);
+		persona->pasaporte=1024;
 
 
-	int conexion = crear_conexion_servidor_prueba();
+	t_buffer* buffer = malloc(sizeof(t_buffer));
 
-	agregar_a_paquete(paquete,valor,(strlen(valor)+1));
-	enviar_paquete(paquete, conexion);
-	eliminar_paquete(paquete);
-	terminar_programa(conexion, logger, NULL);
-}*/
+	//Armamos el buffer (size y el stream)
 
+	buffer->size = sizeof(uint32_t) * 3 // DNI, Pasaporte y longitud del nombre
+	             + sizeof(uint8_t) // Edad
+	             + strlen(persona->nombre) + 1;
 
-
-
-
-void mandar_mensaje(t_log* logger,char *mensaje)
-{
-	int conexion = crear_conexion_servidor_prueba();
-	enviar_mensaje(mensaje,conexion);
-	terminar_programa(conexion, logger, NULL);
-
-}
+	void* stream = malloc(buffer->size);
 
 
+	int offset = 0; // Desplazamiento
 
-void mandar_valor(t_log* logger)
-{
-	t_paquete* paquete = crear_paquete();
-	t_config* config = leer_config();
+	memcpy(stream + offset, &persona->dni, sizeof(uint32_t));
+	offset += sizeof(uint32_t);
+	memcpy(stream + offset, &persona->edad, sizeof(uint8_t));
+	offset += sizeof(uint8_t);
+	memcpy(stream + offset, &persona->pasaporte, sizeof(uint32_t));
+	offset += sizeof(uint32_t);
 
-	char* valor = config_get_string_value(config, "CLAVE");
-	int conexion = crear_conexion_servidor_prueba();
+	memcpy(stream + offset, &persona->nombre_length, sizeof(uint32_t));
+	offset += sizeof(uint32_t);
+	memcpy(stream + offset, persona->nombre, strlen(persona->nombre));
 
-	agregar_a_paquete(paquete,valor,(strlen(valor)+1));
 
-	enviar_paquete(paquete, conexion);
-	eliminar_paquete(paquete);
-	terminar_programa(conexion, logger, config);
+	buffer->stream = stream;
+
+
+
+	//Armamos el paquete
+	t_paquete* paquete = malloc(sizeof(t_paquete));
+	paquete->buffer=buffer;
+	paquete->codigo_operacion= PERSONA;
+
+
+
+	void* a_enviar = malloc(buffer->size + sizeof(uint8_t) + sizeof(uint32_t));
+	int offset2 = 0;
+
+	memcpy(a_enviar + offset2, &(paquete->codigo_operacion), sizeof(uint8_t));
+	offset2 += sizeof(uint8_t);
+	memcpy(a_enviar + offset2, &(paquete->buffer->size), sizeof(uint32_t));
+	offset2 += sizeof(uint32_t);
+	memcpy(a_enviar + offset2, paquete->buffer->stream, paquete->buffer->size);
+
+	int conexion =crear_conexion_servidor_prueba();
+
+	// Por último enviamos
+	send(conexion, a_enviar, buffer->size + sizeof(uint8_t) + sizeof(uint32_t), 0);
+
+	// No nos olvidamos de liberar la memoria que ya no usaremos
+	free(a_enviar);
+	free(paquete->buffer->stream);
+	free(paquete->buffer);
+	free(paquete);
+
+
+
 }
 
 
 
 int crear_conexion_servidor_prueba()
 {
-	int conexion;
 	char* ip;
 	char* puerto;
 
@@ -153,17 +176,7 @@ t_config* leer_config(void)
 
 
 
-/*void paquete(int conexion)
-{
-	//Ahora toca lo divertido! -> Esto es para enviar lo que escribis por consola, lo empaquetas y lo envias
 
-	char* leido;
-	t_paquete* paquete;
-
-
-
-
-}*/
 
 void terminar_programa(int conexion, t_log* logger, t_config* config)
 {

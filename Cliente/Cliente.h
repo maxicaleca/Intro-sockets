@@ -24,5 +24,10 @@ void leer_consola(t_log*);
 void paquete(int);
 void terminar_programa(int, t_log*, t_config*);
 void enviar_paquete_prueba(t_log* , int , int );
+void crear_y_enviar_paquete_persona();
+void enviar_persona(t_log*);
+int crear_conexion_servidor_prueba();
+void  mostrar_menu();
+void menu_principal();
 
 #endif /* TP0_H_ */
